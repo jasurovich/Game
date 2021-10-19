@@ -1,4 +1,4 @@
-# imtihon
+# Tosh qaychi qog'oz
 
 A new Flutter project.
 <img src="https://github.com/jasurovich/Game/blob/main/assets/images/Screenshot_1634652427.png"
