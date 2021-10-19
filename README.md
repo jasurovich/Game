@@ -1,10 +1,9 @@
 # imtihon
 
 A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
+<img src="https://github.com/jasurovich/Game/blob/main/assets/images/Screenshot_1634652427.png"
+     alt="Onboarding page"
+     style="float: left; margin-right: 10px;" width="200" />
 
 A few resources to get you started if this is your first Flutter project:
 
