@@ -33,3 +33,6 @@
      alt="Onboarding page"
      style="float: left; margin-right: 10px;" width="200" />
 
+
+<a href="https://github.com/jasurovich/Game/blob/main/app-arm64-v8a-release.apk">You can Download here</a>
+
