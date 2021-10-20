@@ -21,6 +21,9 @@ class _MainPageState extends State<MainPage> {
   int playerScore = 0;
   int tapTimes = 0;
   String winner = "";
+  Color chosenTosh = Colors.blue;
+  Color chosenQaychi = Colors.blue;
+  Color chosenQogoz = Colors.blue;
 
   @override
   Widget build(BuildContext context) {
@@ -53,6 +56,9 @@ class _MainPageState extends State<MainPage> {
                         InkWell(
                           onTap: () {
                             setState(() {
+                              chosenTosh = Colors.purple;
+                              chosenQaychi = widget.color!;
+                              chosenQogoz =widget.color!;
                               player = "✊";
                             });
                           },
@@ -63,7 +69,7 @@ class _MainPageState extends State<MainPage> {
                               style: TextStyle(fontSize: 40.0),
                             ),
                             decoration: BoxDecoration(
-                              color: widget.color,
+                              color: chosenTosh,
                               borderRadius: BorderRadius.circular(
                                 10.0,
                               ),
@@ -75,6 +81,9 @@ class _MainPageState extends State<MainPage> {
                         InkWell(
                           onTap: () {
                             setState(() {
+                               chosenQaychi = Colors.purple;
+                              chosenQogoz = widget.color!;
+                              chosenTosh = widget.color!;
                               player = "✌️";
                             });
                           },
@@ -85,7 +94,7 @@ class _MainPageState extends State<MainPage> {
                               style: TextStyle(fontSize: 40.0),
                             ),
                             decoration: BoxDecoration(
-                              color: widget.color,
+                              color: chosenQaychi,
                               borderRadius: BorderRadius.circular(
                                 10.0,
                               ),
@@ -97,6 +106,9 @@ class _MainPageState extends State<MainPage> {
                         InkWell(
                           onTap: () {
                             setState(() {
+                              chosenQogoz = Colors.purple;
+                              chosenTosh = widget.color!;
+                              chosenQaychi = widget.color!;
                               player = "👋";
                             });
                           },
@@ -107,7 +119,7 @@ class _MainPageState extends State<MainPage> {
                               style: TextStyle(fontSize: 40.0),
                             ),
                             decoration: BoxDecoration(
-                              color: widget.color,
+                               color: chosenQogoz,
                               borderRadius: BorderRadius.circular(
                                 10.0,
                               ),
@@ -158,8 +170,10 @@ class _MainPageState extends State<MainPage> {
                     if (tapTimes == widget.soni) {
                       if (computerScore > playerScore) {
                         winner = "Computer win";
-                      } else {
-                        winner = "You win";
+                      }else if(computerScore == playerScore) {
+                        winner = "Durang";
+                      } else{
+                        winner = "You Win";
                       }
                       AwesomeDialog(
                         context: context,
